@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+<body>
+
+
+    <a-scene>
+
+        <a-assets>
+
+            <a-asset-item id="luidsprekerObj" src="assets/obj/luidspreker.obj"></a-asset-item>
+            <a-asset-item id="luidsprekerMtl" src="assets/obj/luidspreker.mtl"></a-asset-item>
+
+            <a-asset-item id="vuilbakje_toiletObj" src="assets/obj/vuilbakje_toilet.obj"></a-asset-item>
+            <a-asset-item id="vuilbakje_toiletMtl" src="assets/obj/vuilbakje_toilet.mtl"></a-asset-item>
+
+            <a-asset-item id="lange_lampObj" src="assets/obj/lange_lamp.obj"></a-asset-item>
+            <a-asset-item id="lange_lampMtl" src="assets/obj/lange_lamp.mtl"></a-asset-item>
+
+            <a-asset-item id="lampObj" src="assets/obj/lamp.obj"></a-asset-item>
+            <a-asset-item id="lampMtl" src="assets/obj/lamp.mtl"></a-asset-item>
+
+            <a-asset-item id="blackboardObj" src="assets/obj/blackboard.obj"></a-asset-item>
+            <a-asset-item id="blackboardMtl" src="assets/obj/blackboard.mtl"></a-asset-item>
+
+            <a-asset-item id="blackboardClosedObj" src="assets/obj/blackboard_gesloten.obj"></a-asset-item>
+            <a-asset-item id="blackboardClosedMtl" src="assets/obj/blackboard_gesloten.mtl"></a-asset-item>
+
+            <a-asset-item id="dispenserObj" src="assets/obj/dispenser.obj"></a-asset-item>
+            <a-asset-item id="dispenserMtl" src="assets/obj/dispenser.mtl"></a-asset-item>
+
+            <a-asset-item id="projector_schermObj" src="assets/obj/projector_scherm.obj"></a-asset-item>
+            <a-asset-item id="projector_schermMtl" src="assets/obj/projector_scherm.mtl"></a-asset-item>
+
+            <a-asset-item id="macbookObj" src="assets/obj/macbook.obj"></a-asset-item>
+            <a-asset-item id="macbookMtl" src="assets/obj/macbook.mtl"></a-asset-item>
+
+            <a-asset-item id="vlagObj" src="assets/obj/vlag.obj"></a-asset-item>
+            <a-asset-item id="vlagMtl" src="assets/obj/vlag.mtl"></a-asset-item>
+
+            <a-asset-item id="blackboard_geslotenObj" src="assets/obj/blackboard_gesloten.obj"></a-asset-item>
+            <a-asset-item id="blackboard_geslotenMtl" src="assets/obj/blackboard_gesloten.mtl"></a-asset-item>
+
+        </a-assets>
+
+        <a-entity camera="active: true" look-controls wasd-controls position="0 0 0" data-aframe-default-camera></a-entity>
+        <a-entity obj-model="obj:#luidsprekerObj;mtl:#luidsprekerMtl" position="-5 2 -10" rotation="5.84 45 0"></a-entity>
+        <a-entity obj-model="obj:#luidsprekerObj;mtl:#luidsprekerMtl" position="5 2 -10" rotation="5.84 -45 0"></a-entity>
+
+        <a-entity obj-model="obj:#vuilbakje_toiletObj;mtl:#vuilbakje_toiletMtl" position="3.34488 -2.18124 -10.35197" rotation="0 90 0"></a-entity>
+
+        <a-entity obj-model="obj: #blackboardObj; mtl: #blackboardMtl" position="0 0 -11"></a-entity>
+        <a-entity obj-model="obj:#blackboard_geslotenObj;mtl:#blackboard_geslotenMtl" position="4.34261 0 -3.95689" rotation="0 270 0"></a-entity>
+        <a-entity obj-model="obj:#lange_lampObj;mtl:#lange_lampMtl" position="1.49374 1.8152 -9.5" rotation="0 90 0"></a-entity>
+        <a-entity obj-model="obj:#lange_lampObj;mtl:#lange_lampMtl" position="-2.39664 1.8152 -9.5" rotation="0 90 0"></a-entity>
+
+        <a-entity obj-model="obj:#lampObj;mtl:#lampMtl" position="0 1.8152 -6.52094" rotation="0 90 0" scale="0.8 0.8 0.8"></a-entity>
+        <a-entity obj-model="obj:#lampObj;mtl:#lampMtl" position="2 1.8152 -6.52094" rotation="0 90 0" scale="0.8 0.8 0.8"></a-entity>
+        <a-entity obj-model="obj:#lampObj;mtl:#lampMtl" position="-2 1.8152 -6.52094" rotation="0 90 0" scale="0.8 0.8 0.8"></a-entity>
+
+        <a-entity obj-model="obj:#macbookObj;mtl:#macbookMtl" position="-0.36356 -1.82695 -7.00871" rotation="0 90 0" id="macbook" scale="0.5 0.5 0.5"></a-entity>
+
+        <a-entity obj-model="obj:#projector_schermObj;mtl:#projector_schermMtl" position="-5.56827 -1.86237 -7.98085" rotation="0 90 0" id="projector_scherm" scale="0.7 0.7 0.7"></a-entity>
+        <a-entity obj-model="obj:#dispenserObj;mtl:#dispenserMtl" position="4.31105 0 -7.00871" rotation="0 270 0" id="paper towel dispenser"></a-entity>
+        <a-entity obj-model="obj:#vlagObj;mtl:#vlagMtl" position="-5.68653 -1.86237 -3.07937" rotation="0 90 0" id="vlag" scale="0.7 0.7 0.7"></a-entity>
+
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+</html>
